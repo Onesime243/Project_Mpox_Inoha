@@ -1,0 +1,30 @@
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environnements virtuels
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Configuration des IDE
+.idea/
+.vscode/
+*.swp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# NB : on NE PAS ignore data/, figures/, results/ ni reports/ :
+# ces sorties font partie des livrables du projet académique.

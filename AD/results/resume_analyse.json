@@ -1,0 +1,115 @@
+{
+  "dimensions": [
+    3000,
+    17
+  ],
+  "doublons": {
+    "lignes_dupliquees": 0,
+    "id_dupliques": 0
+  },
+  "ecart_max_identite_fuite": 0.0,
+  "top_correlations": {
+    "Pluviometrie_mm": 0.625,
+    "Tests_Realises": 0.462,
+    "Densite_Population": 0.182,
+    "Temperature_C": 0.131,
+    "NDVI": 0.092
+  },
+  "n_train": 2400,
+  "n_test": 600,
+  "ols_complet": {
+    "R2": 0.8238,
+    "R2_ajuste": 0.821,
+    "AIC": 23064.1,
+    "BIC": 23283.9,
+    "F_pvalue": 0.0,
+    "n_predicteurs": 37
+  },
+  "modele_final": {
+    "n_variables": 14,
+    "R2": 0.823,
+    "R2_ajuste": 0.8219,
+    "AIC": 23029.5,
+    "BIC": 23116.2
+  },
+  "normalite": {
+    "shapiro_stat": 0.9513,
+    "shapiro_p": 0.0,
+    "jarque_bera_stat": 1304.1712,
+    "jarque_bera_p": 0.0,
+    "skewness": 1.0369,
+    "kurtosis": 5.9565
+  },
+  "homoscedasticite": {
+    "breusch_pagan_LM": 300.2711,
+    "breusch_pagan_p": 0.0,
+    "f_stat": 24.3619,
+    "f_p": 0.0
+  },
+  "independance": {
+    "durbin_watson": 2.0175
+  },
+  "linearite_reset": {
+    "reset_F": 2206.5654,
+    "reset_p": 0.0
+  },
+  "vif_max": 1.006,
+  "influence": {
+    "seuil_cook": 0.001667,
+    "n_obs_influentes": 135,
+    "cook_max": 0.0283
+  },
+  "metriques": [
+    {
+      "jeu": "apprentissage",
+      "MSE": 849.994,
+      "RMSE": 29.155,
+      "MAE": 21.674,
+      "R2": 0.823
+    },
+    {
+      "jeu": "test",
+      "MSE": 933.184,
+      "RMSE": 30.548,
+      "MAE": 22.313,
+      "R2": 0.8258
+    }
+  ],
+  "validation_croisee": {
+    "cv_folds": 10,
+    "r2_moyen": 0.8197,
+    "r2_ecart_type": 0.0131,
+    "r2_par_pli": [
+      0.8408,
+      0.8269,
+      0.8133,
+      0.8152,
+      0.8004,
+      0.81,
+      0.8133,
+      0.8375,
+      0.8327,
+      0.8068
+    ]
+  },
+  "poisson_AIC": 34686.2,
+  "negbin_AIC": 30379.3,
+  "comparaison_modeles": [
+    {
+      "modele": "OLS (final)",
+      "R2_test": 0.8258
+    },
+    {
+      "modele": "Ridge",
+      "R2_test": 0.8248
+    },
+    {
+      "modele": "LASSO",
+      "R2_test": 0.8251
+    },
+    {
+      "modele": "ElasticNet",
+      "R2_test": 0.8242
+    }
+  ]
+}
