@@ -1,0 +1,12 @@
+variable,VIF,tolerance
+NDVI,1.006,0.9944
+Couverture_Vaccinale_pct,1.005,0.9953
+Densite_Population,1.005,0.9953
+Tests_Realises,1.005,0.9949
+Pluviometrie_mm,1.004,0.996
+Distance_Centre_Sante_km,1.004,0.9956
+Temperature_C,1.003,0.9969
+Humidite_pct,1.003,0.9975
+Population_Risque,1.003,0.9969
+Mobilite_Humaine,1.002,0.998
+Reservoirs_Animaux,1.002,0.9976

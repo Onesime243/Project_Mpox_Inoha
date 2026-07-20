@@ -1,0 +1,40 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          Cas_Confirmes   R-squared:                       0.823
+Model:                            OLS   Adj. R-squared:                  0.822
+Method:                 Least Squares   F-statistic:                     791.9
+Date:                Mon, 20 Jul 2026   Prob (F-statistic):               0.00
+Time:                        22:46:36   Log-Likelihood:                -11500.
+No. Observations:                2400   AIC:                         2.303e+04
+Df Residuals:                    2385   BIC:                         2.312e+04
+Df Model:                          14                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                     -164.7826      6.556    -25.133      0.000    -177.639    -151.926
+Pluviometrie_mm              0.4508      0.008     53.671      0.000       0.434       0.467
+Temperature_C                2.6179      0.157     16.656      0.000       2.310       2.926
+NDVI                        60.1010      3.797     15.830      0.000      52.656      67.546
+Humidite_pct                 0.3771      0.051      7.332      0.000       0.276       0.478
+Densite_Population           0.1425      0.006     22.923      0.000       0.130       0.155
+Couverture_Vaccinale_pct    -1.7230      0.042    -40.573      0.000      -1.806      -1.640
+Tests_Realises               0.3607      0.007     52.621      0.000       0.347       0.374
+Distance_Centre_Sante_km    -0.8175      0.040    -20.582      0.000      -0.895      -0.740
+Reservoirs_Animaux          -2.9066      1.222     -2.378      0.017      -5.303      -0.510
+Province_Haut_Uele          -5.3603      2.984     -1.796      0.073     -11.212       0.492
+Province_Kasaï_Central      -4.9903      3.210     -1.554      0.120     -11.286       1.305
+Province_Lomami              4.4783      3.001      1.492      0.136      -1.406      10.363
+Province_Sankuru            -7.2854      3.062     -2.379      0.017     -13.290      -1.281
+Saison_Seche                 7.1992      1.790      4.023      0.000       3.690      10.709
+==============================================================================
+Omnibus:                      473.923   Durbin-Watson:                   2.018
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1304.171
+Skew:                           1.037   Prob(JB):                    6.35e-284
+Kurtosis:                       5.957   Cond. No.                     4.12e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.12e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
